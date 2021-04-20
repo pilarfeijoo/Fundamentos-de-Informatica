@@ -4,3 +4,4 @@ minutos = int(input("ingrese una cantidad de minutos: "))
 horas = minutos // 60 
 mins = minutos%60 
 print(str(minutos), "minutos", "son", str(horas), "horas y", str(mins), "minutos")
+
