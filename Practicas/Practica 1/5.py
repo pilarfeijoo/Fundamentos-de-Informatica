@@ -1,7 +1,12 @@
 #5) Realizar un programa que lea tres números por teclado y calcule el promedio de ellos.
-print("Ingresa tres numeros")
-n1=int(input())
-n2=int(input())
-n3=int(input())
-promedio = (n1+n2+n3)/3
-print(float('{:.2f}'.format(promedio)))1
+uno = float(input("Ingresa un numero:"))
+dos = float(input("Ingresa otro numero:"))
+tres = float(input("Ingresa otro numero:"))
+promedio = (uno+ dos+ tres) / 3
+print(float(promedio))
+
+
+
+
+
+
