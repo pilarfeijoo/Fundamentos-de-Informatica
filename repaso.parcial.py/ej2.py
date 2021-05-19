@@ -1,0 +1,1 @@
+#Realizá un programa que imprima la suma de todos los valores de un diccionario de números.#
