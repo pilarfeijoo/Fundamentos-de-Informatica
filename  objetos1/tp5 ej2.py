@@ -21,11 +21,3 @@ class Golondrina:
 
 pepita = Golondrina(42)   
 
-# >>> from ej2 import Golondrina, pepita
-# >>> pepita.energia
-# 42  
-# >>> pepita.volar(20)  
-# >>> pepita.energia
-# 12  
-# >>> pepita.volar(30) 
-# No tengo energia suficiente, necesito comer alpiste

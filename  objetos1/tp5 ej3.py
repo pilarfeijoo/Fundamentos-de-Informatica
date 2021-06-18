@@ -13,15 +13,3 @@ lass Notebook:
 from ej3 import Notebook, mac
 mac = Notebook('apple', 'air', 1000)
 
-# >>> from ej3 import Notebook, mac
-# >>> mac
-# <ej3.Notebook object at 0x7f93a82cefd0>
-# >>> mac.marca
-# 'apple'
-# >>> mac.modelo
-# 'air'
-# >>> mac.precio
-# 1000
-# >>> mac.descuento(50)
-# >>> mac.precio
-# 500.0
