@@ -1,4 +1,17 @@
 import pandas as pd
+import seaborn as sns 
+import scipy.stats as ss
+
+
+
+una_serie = pd.Series(['Peru', 'Argentina', 'Bolivia', 'Uruguay', 'Brasil', 'Chile'], dtype='string')
+una_serie
+
+datos = {"Pais": ['Peru', 'Argentina', 'Bolivia', 'Uruguay', 'Brasil', 'Chile'], "Idioma oficial": ['Español', 'Español', 'Español', 'Español', 'Portugues', 'Español']}
+paises_latam = pd.DataFrame(datos)
+paises_latam
+
+#desafio1
 df = pd.read_csv("/Users/pilarfeijoo/Desktop/fundamentos de informatica/Fundamentos-de-Informatica/tablas de datos/personas_2011.csv",sep = ";")
 print(df)
 print(df.head()) # primeras 5 filas
@@ -13,7 +26,7 @@ print(df.loc[2, 'persona_id'])
 print(df.loc[2,"edad"]) 
 
 
-#Desafío IV: 
+#Desafío 4: 
 # Extrae la columna seniority_level y contá cuántas personas tenían expertice nivel B, C y D
 print(df.groupby("seniority_level")) 
 print(df.groupby("seniority_level").count()) 
@@ -26,7 +39,7 @@ print(df['edad'] > 2) # booleano, true>2 false<2, -1 false
 print(df[df['edad'] > 35 ]) # +de35 años.
 
 
-#Desafío V: 
+#Desafío 5: 
 #Contá cuántas personas de 30 años ingresaron al ministerio en 2011 
 #¿Cuántas formas de hacer este cálculo se te ocurren?
 print(df[df["edad"]== 30]) 
