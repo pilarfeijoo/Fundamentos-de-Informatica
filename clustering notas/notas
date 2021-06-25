@@ -1,0 +1,32 @@
+Clustering buscar características generales en nuestro set de datos. Buscar agrupamientos en nuestros datos. Ver si hay datos q se parecen mas entre ellos en nuestro set de datos.
+No es la mejor técnica cuadno quiero predecir la separación de un dato en algunos de estos datos
+
+Lo que tengo que tener en cuenta a la hora de separar es el criterio con el cual me voy a parar para separar estos datos. Dependiendo el crierio q tome es como se van a separar los grupos y el resultado que me va a dar
+
+Todos los métodos tienen sus limitaciones que se basan en supuestos matemáticos y cuestiones estadísticas 
+
+Grupas definnidos: estimar cuanto se diferencia uno del otro 
+Cada dato en el conjunto en el set de dato puede ser pensado como un punto en el plano.
+Se puede clalcular la dist entre un punto y el otro
+Para saber si existeun diferencia tendríamos que poder ver que distancia hay entre cada punto,
+La dist que fotma parte de un mismo grupo es menor que la distancia entre un punto de un grupo y el otro.
+E;;l calculo de la dist es clave para hacer el clustering. Pero tiene sus dificultades. 
+Una distancia lineal que se basa en el teorema de pitagoras. No representa la distancia real.
+La dist se puede calcular por la distancia de manahattan .
+
+Para entrar a los métodos de clustering hay que hacer unt tratamiento de los datos.
+-normalizado:
+-escalado:
+Este paso q se hace nos sirve para no sobreva;\lorar NINGUNA VARIABLE. Es para q pueda considerar a todas las variables por igual.
+ Ej: estoy midiendo distancias en km con cosas atomicas la distancia es cualquier cosa 
+Puede haber variables aue toman valores mas grande sque otros y estos métodos reconocen estas diferencias entonces por eso se hace eol ESCALADO.
+A su vez se hace la normalización para que cada valor me diga como vamos a dividir ese valor por el desvio estándar. Hacer un recalculo de cada punto del dataset para conocer el valor y cuanto se aleja de la media o del promedio del comportamiento de los datos .
+
+scaler
+ 
+
+Kmeans 
+Existen muchos métodos de clusterin g. kmeans es el mas sencillo.  Agrupar mi. Conjunto de grupos. Y averiguar cual es la mejor forma de separaar esos datos. Va a buscar la separación de tal forma q tenga la menor separación entre ellos. Respecto de los otros grupos que existen. Va etiquetando los valores. Lo vamos a hacer alasar.
+Una vez que los separa va a calcular la MEDIA de esos datos(por eso es sumamente importante normalizar los datos. )
+Una vez uqe calculo la media redefino centroides, esto lo hace n veces hasta que encuentra la mejor separación de los datos. 
+ 
