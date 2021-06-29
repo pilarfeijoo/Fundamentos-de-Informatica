@@ -45,3 +45,12 @@ print(df[df['edad'] > 35 ]) # +de35 años.
 print(df[df["edad"]== 30]) 
 
 print(df['maximo_grado_academico_id'].value_counts())
+
+# Desafío VII: Descargala en formato csv y cargala en un nuevo DataFrame de nombre df_cat 
+path = '/Users/pilarfeijoo/Desktop/fundamentos de informatica/ref_categoria_conicet (1).csv'
+df_cat = pd.read_csv(path, sep = ';')
+print(df_cat)
+
+# Desafío VIII: Identificá si existen columnas en común con el DataFrame grande
+#categoria_conicet_id
+
